@@ -1,0 +1,189 @@
+ 
+.gallery {
+  font-family: "YanoneKaffeesatz";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom:-150vh;
+    height: 100vh;
+    -webkit-animation: crunch 4s 1s ease-in-out infinite;
+            animation: crunch 4s 1s ease-in-out infinite;
+  }
+  @-webkit-keyframes crunch {
+    50% {
+      transform: scaleX(0.6);
+    }
+  }
+  @keyframes crunch {
+    50% {
+      transform: scaleX(0.6);
+    }
+  }
+  
+  .card {
+    position: absolute;
+    bottom: -200vh;
+    display: flex;
+    width: 95vw;
+    height: 22.5625vw;
+  }
+  .card1 {
+    position: absolute;
+    bottom: -240vh;
+    display: flex;
+    width: 95vw;
+    height: 22.5625vw;
+  }
+  .fold {
+    flex: 1;
+    background: url(../img/page2.jpg);
+    background-size: cover;
+    -webkit-animation: 4s 1s ease-in-out infinite;
+            animation: 4s 1s ease-in-out infinite;
+  }
+  .fold:nth-child(1) {
+    background-position: 0%;
+  }
+  .fold:nth-child(2) {
+    background-position: 25%;
+  }
+  .fold:nth-child(3) {
+    background-position: 50%;
+  }
+  .fold:nth-child(4) {
+    background-position: 75%;
+  }
+  .fold:nth-child(5) {
+    background-position: 100%;
+  }
+  .fold:first-child {
+    border-radius: 2vw 0 0 2vw;
+  }
+  .fold:last-child {
+    border-radius: 0 2vw 2vw 0;
+  }
+  .fold:nth-child(odd) {
+    -webkit-animation-name: odd-fold;
+            animation-name: odd-fold;
+  }
+  @-webkit-keyframes odd-fold {
+    50% {
+      transform: skewY(15deg);
+      filter: brightness(1.25);
+    }
+  }
+  @keyframes odd-fold {
+    50% {
+      transform: skewY(15deg);
+      filter: brightness(1.25);
+    }
+  }
+  .fold:nth-child(even) {
+    -webkit-animation-name: even-fold;
+            animation-name: even-fold;
+  }
+  @-webkit-keyframes even-fold {
+    50% {
+      transform: skewY(-15deg);
+      filter: brightness(0.75);
+    }
+  }
+  @keyframes even-fold {
+    50% {
+      transform: skewY(-15deg);
+      filter: brightness(0.75);
+    }
+  }
+  .fold1 {
+    flex: 1;
+    background: url(../img/page1.jpg);
+    background-size: cover;
+    -webkit-animation: 4s 1s ease-in-out infinite;
+            animation: 4s 1s ease-in-out infinite;
+  }
+  .fold1:nth-child(1) {
+    background-position: 0%;
+  }
+  .fold1:nth-child(2) {
+    background-position: 25%;
+  }
+  .fold1:nth-child(3) {
+    background-position: 50%;
+  }
+  .fold1:nth-child(4) {
+    background-position: 75%;
+  }
+  .fold1:nth-child(5) {
+    background-position: 100%;
+  }
+  .fold1:first-child {
+    border-radius: 2vw 0 0 2vw;
+  }
+  .fold1:last-child {
+    border-radius: 0 2vw 2vw 0;
+  }
+  .fold1:nth-child(odd) {
+    -webkit-animation-name: odd-fold;
+            animation-name: odd-fold;
+  }
+  @-webkit-keyframes odd-fold {
+    50% {
+      transform: skewY(15deg);
+      filter: brightness(1.25);
+    }
+  }
+  @keyframes odd-fold {
+    50% {
+      transform: skewY(15deg);
+      filter: brightness(1.25);
+    }
+  }
+  .fold1:nth-child(even) {
+    -webkit-animation-name: even-fold;
+            animation-name: even-fold;
+  }
+  @-webkit-keyframes even-fold {
+    50% {
+      transform: skewY(-15deg);
+      filter: brightness(0.75);
+    }
+  }
+  @keyframes even-fold {
+    50% {
+      transform: skewY(-15deg);
+      filter: brightness(0.75);
+    }
+  }
+
+  .text {
+    font-family: "YanoneKaffeesatz";
+    font-size: 80px;
+    display: flex;
+    position: absolute;
+    bottom: -150vh;
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+  }
+  .text .wrapper1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  .text .wrapper1 .letter {
+    transition: ease-out 1s;
+    transform: translateY(40%);
+  }
+  .text .wrapper1 .shadow {
+    transform: scale(1, -1);
+    color: #999;
+    transition: ease-in 5s, ease-out 5s;
+  }
+  .text .wrapper1:hover .letter {
+    transform: translateY(-200%);
+  }
+  .text .wrapper1:hover .shadow {
+    opacity: 0;
+    transform: translateY(200%);
+  }
